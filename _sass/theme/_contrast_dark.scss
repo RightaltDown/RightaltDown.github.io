@@ -1,28 +1,31 @@
 /* ==========================================================================
-   CONTRAST THEME - DARK VERSION
+   Minimal-Light — Dark Mode
    ========================================================================== */
 /* Color codes used for the theme */
-$primary-color              : #ff6c60;
-$background                 : #000000;
-$background-light           : #1a1a1a;
-$background-lighter         : #2a2a2a;
-$text                      : #ffffff;
-$text-muted                : #d9d9d9;
-$link                      : #96cbfe;
-$link-dark                 : #c6c5fe;
-$link-light                : #ff73fd;
-$footer                    : #000000;
-$border                    : #4d4d4d;
-$border-light              : #666666;
-$selection-bg              : #264f78;
-$selection-text            : #ffffff;
+$primary-color              : #3eb7f0;   // headings + links
+$dark-primary-color         : mix(#000, $primary-color, 40%);
+$darker-primary-color       : mix(#000, $primary-color, 60%);
+$light-primary-color        : mix(#fff, $primary-color, 25%);
+$lighter-primary-color      : mix(#fff, $primary-color, 50%);
+$background                 : #20212b;   // main background
+$background-light           : #2a2b36;   // cards / sections
+$background-lighter         : #1c1d26;   // code blocks
+$text                       : #dadbdf;   // primary text
+$text-muted                 : #9fa1a8;   // secondary text
+$link                       : #3eb7f0;
+$link-dark                  : mix(#000, $link, 25%);
+$link-light                 : mix(#fff, $link, 25%);
+$footer                     : #20212b;
+$border                     : #3a3b45;
+$border-light               : mix(#fff, $border, 20%);
 
-/* Color codes used for the site */
-$danger-color               : #ff6c60;
-$info-color                 : #96cbfe;
-$notice-color               : #ffffff;
-$success-color              : #a8ff60;
-$warning-color              : #e9c062;
+/* Semantic colors (kept readable on dark bg) */
+$danger-color               : #e06c75;
+$info-color                 : #61afef;
+$notice-color               : #d19a66;
+$success-color              : #98c379;
+$warning-color              : #e5c07b;
+
 
 /* Other basic settings for the template */
 $border-radius              : 4px;

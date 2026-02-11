@@ -2,22 +2,40 @@
    CONTRAST THEME - LIGHT VERSION
    ========================================================================== */
 /* Color codes used for the theme */
-$primary-color              : #b60000;
+// $primary-color              : #b60000;
+// $dark-primary-color         : mix(#000, $primary-color, 40%);
+// $darker-primary-color       : mix(#000, $primary-color, 60%);
+// $light-primary-color        : mix(#fff, $primary-color, 50%);
+// $lighter-primary-color      : mix(#fff, $primary-color, 90%);
+// $background                 : #ffffff;
+// $background-light           : #fafafa;
+// $background-lighter        : #ffffff;
+// $text                      : #000000;
+// $text-muted                : #404040;
+// $link                      : #0000ff;
+// $link-dark                 : #0000cc;
+// $link-light                : #3333ff;
+// $footer                    : #ffffff;
+// $border                    : #c0c0c0;
+// $border-dark               : #808080;
+// $selection-bg              : #b3d4fc;
+// $selection-text            : #000000;
+$primary-color              : #3eb7f0;   // headings + links
 $dark-primary-color         : mix(#000, $primary-color, 40%);
 $darker-primary-color       : mix(#000, $primary-color, 60%);
-$light-primary-color        : mix(#fff, $primary-color, 50%);
-$lighter-primary-color      : mix(#fff, $primary-color, 90%);
-$background                 : #ffffff;
-$background-light           : #fafafa;
-$background-lighter        : #ffffff;
-$text                      : #000000;
-$text-muted                : #404040;
-$link                      : #0000ff;
-$link-dark                 : #0000cc;
-$link-light                : #3333ff;
-$footer                    : #ffffff;
-$border                    : #c0c0c0;
-$border-dark               : #808080;
+$light-primary-color        : mix(#fff, $primary-color, 25%);
+$lighter-primary-color      : mix(#fff, $primary-color, 50%);
+$background                 : #20212b;   // main background
+$background-light           : #2a2b36;   // cards / sections
+$background-lighter         : #1c1d26;   // code blocks
+$text                       : #dadbdf;   // primary text
+$text-muted                 : #9fa1a8;   // secondary text
+$link                       : #3eb7f0;
+$link-dark                  : mix(#000, $link, 25%);
+$link-light                 : mix(#fff, $link, 25%);
+$footer                     : #20212b;
+$border                     : #3a3b45;
+$border-dark               : mix(#fff, $border, 20%);
 $selection-bg              : #b3d4fc;
 $selection-text            : #000000;
 

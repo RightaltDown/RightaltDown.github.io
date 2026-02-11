@@ -1,0 +1,137 @@
+/* ==========================================================================
+   MINIMAL LIGHT THEME - UNIFIED VERSION
+   Based on your custom CSS from minimal-light repo
+   ========================================================================== */
+
+/* Color codes from your CSS */
+$primary-color              : #043361;
+$background                 : #fdfdfd;
+$background-light           : #ffffff;
+$background-lighter         : #f8f8f8;
+$text                       : #595959;      /* Body text - autocolor from your CSS */
+$text-muted                 : #777777;
+$header-text                : #043361;      /* Headers - matching your h1-h6 color */
+$link                       : #39c;         /* Your link color */
+$link-dark                  : #069;         /* Your hover color */
+$link-light                 : #39c;
+$footer                     : #fdfdfd;
+$border                     : #e5e5e5;
+$border-dark                : #e0e0e0;
+
+/* Color codes used for the site */
+$danger-color               : #dc3545;
+$info-color                 : #39c;
+$notice-color               : #777;
+$success-color              : #28a745;
+$warning-color              : #ffc107;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.05);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Unified theme CSS variables */
+:root {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-dark};
+  --global-code-background-color      : #{$background-lighter};
+  --global-code-text-color            : #{$text};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link};
+  --global-masthead-link-color        : #{$header-text};
+  --global-masthead-link-color-hover  : #{$link};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$background-lighter};
+  --global-header-text-color          : #{$header-text};
+}
+
+/* Typography - serif for body, sans-serif for headers (like minimal-light) */
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif !important;
+  line-height: 1.75;
+  color: var(--global-text-color);
+}
+
+/* Headers in #043361 (your color) */
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.page__lead,
+.archive__item-title,
+.author__name {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  color: #{$header-text} !important;
+  font-weight: 600;
+}
+
+/* Specific header weights from your CSS */
+h1 {
+  font-weight: 500 !important;
+  font-size: 28px;
+}
+
+h2 {
+  font-weight: 500 !important;
+  font-size: 157%;
+  margin: 2px 0px 15px;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 600 !important;
+  margin: 0 0 20px;
+}
+
+/* Links - matching your CSS */
+a {
+  color: #{$link} !important;
+  text-decoration: none !important;
+  
+  &:hover {
+    color: #{$link-dark} !important;
+  }
+}
+
+/* Footer styling */
+footer {
+  color: #{$text};
+  background-color: #{$footer};
+  border-top: 1px solid #{$border};
+}
+
+/* Body text in serif and gray */
+p, li, .page__content, 
+.archive__item-excerpt,
+.page__meta {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  color: #{$text};
+}
+
+/* Sidebar text */
+.sidebar p,
+.sidebar li {
+  color: #{$text};
+}
+
+/* Code blocks */
+code, pre {
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color: #333;
+  background: #{$background-lighter};
+}
+
+pre {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #{$border};
+  overflow-x: auto;
+}
